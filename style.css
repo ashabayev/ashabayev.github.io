@@ -36,3 +36,14 @@ ul.topnav li a:hover {background-color: #555;}
 
 /* Hide the list item that contains the link that should open and close the topnav on small screens */
 ul.topnav li.icon {display: none;}
+
+
+#home-wrapper .tabs > div:hover {
+    background-color: #50E3C2;
+    border-radius: 5px; }
+#home-wrapper .nav-ico {
+    height: 100%;
+    display: flex; }
+.tabs > div{
+	cursor:pointer;
+}
