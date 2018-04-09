@@ -5,7 +5,7 @@ body {
 
 .container {
   position: relative;
-  width: 600px;
+  width: 450px;
   height: auto;
   float: left;
   margin: 6;
@@ -59,8 +59,14 @@ ul.topnav li.icon {display: none;}
 
 .image {
   display: block;
-  width: 600px;
-  height: auto;
+  width: 450px;
+  height: 350px;
+}
+
+.white-box {
+    background-color: white;
+    color: black;
+    <!--other positioning attributes-->
 }
 
 .overlay {
