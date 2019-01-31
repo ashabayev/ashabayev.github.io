@@ -3,50 +3,68 @@
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<ul class="topnav" id="myTopnav">
-  <li><a href="#home">Home</a></li>
-  <li><a href="myCode.html">Code</a></li>
-  <li><a href="film.html">Film</a></li>
-  <li><a href="videoGames.html">Video Games</a></li>
-  <li><a href="3DModels.html">3D Models</a></li>
-   <li><a href="#Etc">Etc</a></li>
-  <li><a href="about.html">About</a></li>
-  <li class="icon"> <!--This is used for small screens-->
-    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-  </li>
-</ul>
+        <li><a href="index.html"><b>Home</b></a></li>
+        <li><a href="myCode.html"><b>Code</b></a></li>
+        <li><a href="film.html"><b>Film</b></a></li>
+        <li><a href="videoGames.html"><b>Video Games</b></a></li>
+        <li><a href="3DModels.html"><b>3D Models</b></a></li>
+        <li><a href="about.html"><b>About</b></a></li>
+        <li class="icon"> <!--This is used for small screens-->
+            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+        </li>
+    </ul>
 
 </head>
+
+
 <body>
-	<div id= "header">
-		<h1>Hello, this is Anna Shabayev!</h1>
-		<p>I code, film, develop video games, make 3D Models, etc.
-	</div>
-	<div id="home-wrapper">
-				<div onclick="window.location='videoGames.html';" class="container">
-					<div class="nav-ico"><img src = "images/Macinball.jpg" alt = "videoGames" class="image"/></div>
-					<div class="overlay">
-						<div class="text">Video Games</div>
-					</div>
-				</div>
-				<div onclick="window.location='film.html';" class="container">
-					<div class="nav-ico"><img src = "images/Stuffed.PNG" alt = "film" class="image"/></div>
-					<div class="overlay">
-						<div class="text">Film</div>
-					</div>
-				</div>
-				<div onclick="window.location='myCode.html';" class="container">
-					<div class="nav-ico"><img src = "images/bluecode.gif" alt = "code" class="image"/></div>
-					<div class="overlay">
-						<div class="text">Code</div>
-					</div>
-				</div>
-				<div onclick="window.location='3DModels.html';" class="container">
-					<div class="nav-ico"><img src = "images/3Dmodels.PNG" alt = "3DModels" class="image"/></div>
-					<div class="overlay">
-						<div class="text">3D Models</div>
-					</div>	
-				</div>
-	</div>
+	<div id= "intro">
+        <div id= "introText">
+            <h1>Hello, this is Anna Shabayev! I work in virtual and augmented reality using my skills in programming, video game developing, filming, and 3D modeling. </h1>
+	    </div>
+    </div>
+    <div id="main">
+        <div id="home-wrapper">
+            <div onclick="location.href='https://devpost.com/software/together-gi26w9';" class="glowBox">
+                        <div class="nav-ico"><img src = "images/winner.PNG" alt = "Winner" class="image"/></div>
+                        <div class="overlay">
+                            <div class="text">Won Best In Gaming</div>
+                        </div>
+            </div>        
+            <div onclick="window.location='videoGames.html';" class="glowBox">
+                        <div class="nav-ico"><img src = "images/Macinball.jpg" alt = "videoGames" class="image"/></div>
+                        <div class="overlay">
+                            <div class="text">Video Games</div>
+                        </div>
+                    </div>
+                    <div onclick="window.location='film.html';" class="glowBox">
+                        <div class="nav-ico"><img src = "images/Stuffed.PNG" alt = "film" class="image"/></div>
+                        <div class="overlay">
+                            <div class="text">Film</div>
+                        </div>
+                    </div>
+                    <div onclick="window.location='myCode.html';" class="glowBox">
+                        <div class="nav-ico"><img src = "images/bluecode.gif" alt = "code" class="image"/></div>
+                        <div class="overlay">
+                            <div class="text">Code</div>
+                        </div>
+                    </div>
+                    <div onclick="window.location='3DModels.html';" class="glowBox">
+                        <div class="nav-ico"><img src = "images/3Dmodels.PNG" alt = "3DModels" class="image"/></div>
+                        <div class="overlay">
+                            <div class="text">3D Models</div>
+                        </div>	
+                    </div>
+        </div>
+    </div>
+    <footer id="footer">
+        
+		<h2><a href="https://www.linkedin.com/in/anna-shabayev-90371a136/">LinkedIn</a>
+	
+	       <a href="https://twitter.com/4nnanas">Twitter</a>
+        </h2>
+        <h2>©2019 Anna Shabayev</h2>
+    </footer>
 
 </body>
 
