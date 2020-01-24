@@ -7,16 +7,17 @@
     --color1: #FFE1BC;
     --color2: #A06596;
     --color3: #679BE5;
-    --backgroundColor: #E3DEE1;
+    --backgroundColor: #f0ebee;
     --color5: #403C59;
 }
 
-html, body {
+html{
     background-color: var(--backgroundColor);
     position: relative;
     height: 100%;
-    
 }
+
+
 
 #container{
     min-height: 100%;
@@ -31,6 +32,8 @@ html, body {
     background-color: var(--backgroundColor);
     min-height: 100%;
     padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
 
 }
 
@@ -66,6 +69,10 @@ html, body {
   float: left;
   margin: 6;
 }
+
+p {
+    font-size: 20px;
+}
  
 h1 {
     color: var(--backgroundColor);
@@ -80,12 +87,16 @@ h2 {
 
 h3 {
     color: var(--color5);
-    margin-left: 20px;
     font-size: 30px;
 }
 
 a {
-  color: hotpink;
+    font-size: 20px;
+    color: hotpink;
+}
+
+iframe{
+    margin-left: 80px;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -95,10 +106,14 @@ ul.topnav {
 	padding: 0;
 	overflow: hidden;
 	background-color: var(--color2);
+    list-style: none;
 }
 
 /* Float the list items side by side */
-ul.topnav li {float: left;}
+ul.topnav li {
+    float: left;
+    list-style: none;
+}
 
 /* Style the links inside the list items */
 ul.topnav li a {
@@ -109,6 +124,7 @@ ul.topnav li a {
 	text-decoration: none;
 	transition: 0.3s;
 	font-size: 18px;
+    list-style: none;
 }
 
 /* Change background color of links on hover */
@@ -138,10 +154,10 @@ ul.topnav li.icon {display: none;}
 }
 
 .white-box {
-    background-color: var(--backgroundColor);
+    background-color: white;
     color: black;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 .overlay {

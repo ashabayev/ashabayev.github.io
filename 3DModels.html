@@ -2,21 +2,24 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<ul class="topnav" id="myTopnav">
-        <li><a href="index.html"><b>Home</b></a></li>
-        <li><a href="myCode.html"><b>Code</b></a></li>
-        <li><a href="film.html"><b>Film</b></a></li>
-        <li><a href="videoGames.html"><b>Video Games</b></a></li>
-        <li><a href="3DModels.html"><b>3D Models</b></a></li>
-        <li><a href="about.html"><b>About</b></a></li>
-        <li class="icon"> <!--This is used for small screens-->
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-    </ul>
+    <script src="jquery-3.4.1.min.js"></script>
+    <title>3D Models • Anna Shabayev</title>
 
 </head>
 
 <body>
+    <!--Navigation bar-->
+     <div id="nav-placeholder">
+
+    </div>
+
+    <script>
+    $(function(){
+      $("#nav-placeholder").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+    
     <h3>Anna's 3D Models.</h3>
     <center>
     <p>Modeled and animated for the 2018 Creating Reality Hackathon for the hololens.</p>
