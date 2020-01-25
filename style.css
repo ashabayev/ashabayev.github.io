@@ -195,6 +195,10 @@ ul.topnav li.icon {display: none;}
     opacity: .5;
 }
 
+.img{
+    margin:auto;
+}
+
 .thumbnail{
     margin:auto;
     text-align: center;
@@ -213,9 +217,13 @@ ul.topnav li.icon {display: none;}
 }
 
 .userImage{
-    border-radius: 50%;
-    width:200px;
+    max-width:400px;
     height:auto;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
 }
 
 .thumbText{
@@ -223,6 +231,11 @@ ul.topnav li.icon {display: none;}
     padding: 10px;
     line-height: 1.6;
 }
+
+.about{
+    
+}
+
 /*blog*/
 .links{
     margin-top: 40px;
