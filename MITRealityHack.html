@@ -1,41 +1,46 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="jquery-3.4.1.min.js"></script>
-    <title>MITRealityHack • Anna Shabayev</title>
-</head>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.4.1.min.js"></script>
+        <title>MITRealityHack • Anna Shabayev</title>
+    </head>
 
-<body>
-    <!--Navigation bar-->
-     <div id="nav-placeholder">
+    <body>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
 
-    </div>
+        </div>
 
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
-    </script>
-    <!--end of Navigation bar-->
-    <div id="main">
-	<h3>The Mind's Eye - January 2020</h3>
-	<p>Best in Eye Tracking | MIT Reality Hack 2020</p>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
 
-	<iframe width="560" height="315"
-	src="https://www.youtube.com/embed/FoeQE8Doe7s">
-	</iframe>
-	
-	<p>I led a team to create a VR education game to teach people about how biases can impact decision making</p>
-    <p>Being a psychology minor, I've had the idea to make a game around confirmation bias for a while, however didn't have the resources to do it since it required eye tracking technology. So I took advantage of the Vive Pro Eye at the hackathon and developed with it for the first time.</p>
-        
+        <div id="main" class="blog">
+            <div class="blogHeader">
+                <h1>The Mind's Eye - January 2020</h1>
+                <p><b>Best in Eye Tracking</b> | MIT Reality Hack 2020</p>
+            </div>
+            <iframe width="800" height="512"
+                    src="https://www.youtube.com/embed/FoeQE8Doe7s">
+            </iframe>
+            <div class="blogText">
+                <p>The Mind's Eye won Best in Eye Tracking at the VR/AR 2020 MIT Reality Hack. It was my first time using eye tracking technology, and I led a team to use the Vive Pro Eye to create an educational game to teach people about how their biases can effect their decision making. </p>
+                <p>Being a psychology minor, I've had the idea to make a game around confirmation bias for a while, however didn't have the resources to do it since it required eye tracking technology. So I took advantage of the Vive Pro Eye at the hackathon and developed with it for the first time.</p>
+                <p>In this detective game, the player is presented with a murder scene and they need to piece the clues together to figure out who was the murderer and what was the murder weapon. While they are investigating, the game keeps track of how long the player looks at something. The game will then influence the player to go with the object that took their interest with non player characters confirming those instincts.</p>
+            </div>
+            <div class=links>
+                <h3><b>Links</b></h3>
+                <a href="https://devpost.com/software/the-mind-s-eye">Source on Github</a>
+                <br>
+                <a href="https://devpost.com/software/the-mind-s-eye">Devpost Submission</a>
+            </div>
 
-	<h3>Links</h3>
-    <a href="https://devpost.com/software/the-mind-s-eye">Source on Github</a>
-        <p></p>
-    <a href="https://devpost.com/software/the-mind-s-eye">Devpost Submission</a>
-    </div>
-</body>
+        </div>
+    </body>
 
 
 </html>

@@ -1,78 +1,133 @@
 ﻿<!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="jquery-3.4.1.min.js"></script>
-    <title>Anna Shabayev</title>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="jquery-3.4.1.min.js"></script>
+        <title>Anna Shabayev</title>
 
-</head>
+    </head>
 
 
-<body>
-    <!--Navigation bar-->
-     <div id="nav-placeholder">
+    <body>
+        <!--Navigation bar-->
+        <div id="nav-placeholder">
 
-    </div>
+        </div>
 
-    <script>
-    $(function(){
-      $("#nav-placeholder").load("nav.html");
-    });
-    </script>
-    <!--end of Navigation bar-->
-    
-    
-	<div id= "intro">
-        <div id= "introText">
-            <h1>Hello, this is Anna Shabayev! I work in virtual and augmented reality using my skills in programming, video game design, and film production. </h1>
-	    </div>
-    </div>
-    <div id="main">
-        <div id="home-wrapper">
-            <div onclick="location.href='https://devpost.com/software/together-gi26w9';" class="glowBox">
-                        <div class="nav-ico"><img src = "images/winner.PNG" alt = "Winner" class="image"/></div>
-                        <div class="overlay">
-                            <div class="text">Won Best In Gaming</div>
-                        </div>
-            </div>        
-            <div onclick="window.location='projects.html';" class="glowBox">
-                        <div class="nav-ico"><img src = "images/boseAR.PNG" alt = "videoGames" class="image"/></div>
-                        <div class="overlay">
-                            <div class="text">Video Games</div>
-                        </div>
-                    </div>
-                    <div onclick="window.location='film.html';" class="glowBox">
-                        <div class="nav-ico"><img src = "images/Stuffed.PNG" alt = "film" class="image"/></div>
-                        <div class="overlay">
-                            <div class="text">Film</div>
-                        </div>
-                    </div>
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+
+        <div id= "intro">
+            <div id= "introText">
+                <h1>Hello, this is Anna Shabayev! I work in virtual and augmented reality using my skills in programming, video game design, and film production. </h1>
+            </div>
+        </div>
+        <div id="main">
+            <p>Besides these projects below, I also have a <a href="https://devpost.com/ashabayev?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">devpost</a> with all my hackathon projects and a <a href="https://github.com/ashabayev">github</a>.</p>
+            <p>I have won twice at the MIT VR hackathons, have been commissioned to make a game for Bose AR, and have worked on a VR journalism piece.</p>
+            
+            <div id="home-wrapper">
+
+                <div id="thumbnail">
                     <div onclick="window.location='MITRealityHack.html';" class="glowBox">
-                        <div class="nav-ico"><img src = "images/themindeye.PNG" alt = "The Mind's Eye" class="image"/></div>
+                        <img src = "images/themindeye.PNG" alt = "The Mind's Eye" class="image"/>
+                        <div class="thumbText">
+                            <h2>Bose AR Game Jam</h2>
+                            <h3>Winner at MIT Reality Virtually</h3>
+                        </div>
                         <div class="overlay">
                             <div class="text">Won Best in Eye Tracking</div>
                         </div>
                     </div>
-                    <div onclick="window.location='3DModels.html';" class="glowBox">
-                        <div class="nav-ico"><img src = "images/3Dmodels.PNG" alt = "3DModels" class="image"/></div>
+                </div>
+
+                <div class="thumbnail">
+                    <div onclick="window.location='Together.html';" class="glowBox">
+
+                        <img src = "images/winner.PNG" alt = "Winner" class="image"/>
+                        <div class="thumbText">
+                            <h2>Together</h2>
+                            <h3>Winner at MIT Reality Virtually</h3>
+                        </div>
                         <div class="overlay">
-                            <div class="text">3D Models</div>
+                            <div class="text">Won Best In Gaming</div>
+                        </div>
+                    </div>  
+                </div>
+
+                <div id="thumbnail">
+                    <div onclick="window.location='boseAR.html';" class="glowBox">
+                        <img src = "images/boseAR.PNG" alt = "BoseAR" class="image"/>
+                        <div class="thumbText">
+                            <h2>Bose AR Game Jam</h2>
+                            <h3>Commissioned Work for Bose</h3>
+                        </div>
+                        <div class="overlay">
+                            <div class="text">BoseAR</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="thumbnail">
+                    <div onclick="window.location='arrivalVR.html';" class="glowBox">
+                        <img src = "images/arrival.PNG" alt = "ArrivalVR" class="image"/>
+                        <div class="thumbText">
+                            <h2>Arrival VR</h2>
+                            <h3>Lead Developer</h3>
+                        </div>
+                        <div class="overlay">
+                            <div class="text"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="thumbnail">
+                    <div onclick="window.location='fromtheheart.html';" class="glowBox">
+                        <img src = "images/fromtheheart.PNG" alt = "3DModels" class="image"/>
+                        <div class="thumbText">
+                            <h2>From the HeARt</h2>
+                            <h3>USC Creating Reality</h3>
+                        </div>
+                        <div class="overlay">
+                            <div class="text">from the heARt</div>
                         </div>	
                     </div>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer id="footer">
         
-		<h2><a href="https://www.linkedin.com/in/anna-shabayev-90371a136/">LinkedIn</a>
-	
-	       <a href="https://twitter.com/4nnanas">Twitter</a>
+            <div class="white-box">
+        <h3>Data Visualization Project</h3>
+        <p>Summer 2018</p>
+       <p>Chicago Heat map of crime in the year of 2018 from January to July made in Houdini during my Summer 2018 internship at the NCSA. </p>
+       <p>Includes all crime, such as theft and arson.</p>
+       <img src="./images/chicagoHoudini.png" alt="chicagoCrimeHeatMap" class="image" />
+    </div>
+    <p> </p>
+    <div class="white-box">
+        <h3>Macinball PlusVR</h3>
+        <p>April 2016</p>
+        <a href="https://devpost.com/software/macinball-plusvr">Macinball PlusVR</a>
+        <p>My first time developing with VR. Multiplayer VR game with Leap Motion created and won in Uncommon Hacks Hackathon at University of Chicago.</p>
+
+        <img src="./images/Macinball.jpg" alt="videoGames" />
+    </div>
+        <!--HoMeow-->
+    </body>
+
+    <footer>
+
+        <h2><a href="https://www.linkedin.com/in/anna-shabayev-90371a136/">LinkedIn</a>
+
+            <a href="https://twitter.com/4nnanas">Twitter</a>
         </h2>
         <h2>©2020 Anna Shabayev</h2>
     </footer>
-    
 
-
-</body>
-        
 
 </html>
