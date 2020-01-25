@@ -12,15 +12,22 @@
 }
 
 html{
-    background-color: var(--backgroundColor);
-    position: relative;
+    
     height: 100%;
+}
+
+body{
+    background-color: var(--color5);
+    position: relative;
+    margin: 0 0 100px;
+    padding-bottom:60px;
 }
 
 
 
 #container{
     min-height: 100%;
+    position:relative;
 }
 
 
@@ -29,83 +36,90 @@ html{
     overflow: auto;
     position: relative;
     display: block;
-    background-color: var(--backgroundColor);
+    background-color: var(--color5);
     min-height: 100%;
+    padding-top: 10px;
     padding-bottom: 100px;
     padding-left: 10%;
     padding-right: 10%;
 
 }
 
-#footer{
+footer{
     background-color: var(--color5);
     width: 100%;
     bottom: 0;
-    position: absolute;
-    height: 100px;
-    margin-top: -100px;
-    clear: both;
+    position: fixed;
+    height:60px;
 }
 
 
 #intro{
     background-color: var(--color2);
     padding-top: 1%;
-    padding-bottom: 10px;
-    height: 150px;
+    padding-bottom: 20px;
+
+    margin-bottom: 5px;
 }
 
 #introText{
     padding-left: 10%;
     height: auto;
     width: 80%
+
 }
 
 .glowBox {
-  position: relative;
-  width: 450px;
-  
-  height: auto;
-  float: left;
-  margin: 6;
+    position: relative;
+    width: 450px;
+
+    height: auto;
+    float: left;
+    margin: 15px;
+    margin-bottom: 20px;
 }
 
 p {
     font-size: 20px;
+    color: var(--backgroundColor);
 }
- 
+p + p {
+    margin-top: 20px;
+}
+
 h1 {
     color: var(--backgroundColor);
-    margin-left: 20px;
 }
 
 h2 {
-    color: var(--color1);
-    margin-left: 20px;
+    color: var(--backgroundColor);
     font-size: 20px;
 }
 
 h3 {
-    color: var(--color5);
-    font-size: 30px;
+    color: var(--backgroundColor);
+    font-size: 15px;
 }
 
 a {
     font-size: 20px;
     color: hotpink;
+    text-decoration: none;
 }
 
 iframe{
-    margin-left: 80px;
+    display: block;
+    margin: 0 auto;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
 ul.topnav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: var(--color2);
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color2);
     list-style: none;
 }
 
@@ -117,13 +131,13 @@ ul.topnav li {
 
 /* Style the links inside the list items */
 ul.topnav li a {
-	display: inline-block;
-	color: var(--color5);
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-	transition: 0.3s;
-	font-size: 18px;
+    display: inline-block;
+    color: var(--color5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
     list-style: none;
 }
 
@@ -136,61 +150,97 @@ ul.topnav li.icon {display: none;}
 
 
 #home-wrapper .tabs > div:hover {
-    
-    background-color: var(--color3);
 
-    border-radius: 5px; }
-#home-wrapper .nav-ico {
-    height: 100%;
-    display: flex; }
-.tabs > div{
-	cursor:pointer;
+    background-color: var(--color3);
+    border-radius: 5px; 
+
+
 }
 
-.image {
-  display: block;
-  width: 450px;
-  height: 350px;
+
+
+.tabs > div{
+    cursor:pointer;
+}
+
+#home-wrapper .image {
+
+    width: 450px;
+    height: 350px;
+
 }
 
 .white-box {
-    background-color: white;
     color: black;
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: var(--color3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--color1);
+
+
 }
 
 .glowBox:hover .overlay {
-  opacity: .9;
+    opacity: .5;
+}
+
+.thumbnail{
+    margin:auto;
+    text-align: center;
 }
 
 
 .text {
-  color: var(--color4);
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+    color: var(--backgroundColor);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .userImage{
     border-radius: 50%;
     width:200px;
     height:auto;
+}
+
+.thumbText{
+    text-align: center;
+    padding: 10px;
+    line-height: 1.6;
+}
+/*blog*/
+.links{
+    margin-top: 40px;
+}
+
+.blogHeader{
+    text-align: center;
+    margin: 10px;
+    margin-bottom: 40px;
+    
+}
+
+.blogText{
+    margin-top: 40px;
+}
+
+.blog{
+    max-width: 1100px;
+    margin: auto;
+    
 }
