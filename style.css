@@ -195,8 +195,9 @@ ul.topnav li.icon {display: none;}
     opacity: .5;
 }
 
-.img{
+img{
     margin:auto;
+    max-width: 1000px;
 }
 
 .thumbnail{
@@ -235,6 +236,7 @@ ul.topnav li.icon {display: none;}
 .about{
     
 }
+
 
 /*blog*/
 .links{
