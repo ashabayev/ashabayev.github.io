@@ -9,6 +9,7 @@
     --color3: #679BE5;
     --backgroundColor: #f0ebee;
     --color5: #403C59;
+    --darkerPurple: #333047;
 }
 
 html{
@@ -46,7 +47,7 @@ body{
 }
 
 footer{
-    background-color: var(--color5);
+    background-color: var(--darkerPurple);
     width: 100%;
     bottom: 0;
     position: fixed;
@@ -110,6 +111,7 @@ a {
 iframe{
     display: block;
     margin: 0 auto;
+    border: none;
 }
 
 /* Remove margins and padding from the list, and add a black background color */
@@ -205,6 +207,10 @@ img{
     text-align: center;
 }
 
+.center {
+    text-align: center;
+}
+
 
 .text {
     color: var(--backgroundColor);
@@ -259,3 +265,31 @@ img{
     margin: auto;
     
 }
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
