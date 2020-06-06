@@ -2,6 +2,13 @@
     margin: 0;
     padding: 0;
 }
+/*font*/
+.Roboto{font-family:'Roboto';font-weight:400;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 
 :root{
     --color1: #FFE1BC;
@@ -9,6 +16,7 @@
     --color3: #679BE5;
     --backgroundColor: #f0ebee;
     --color5: #403C59;
+    --lighterPurple: #645e8b;
 }
 
 html{
@@ -72,11 +80,16 @@ footer{
 .glowBox {
     position: relative;
     width: 450px;
-
+    
     height: auto;
     float: left;
     margin: 15px;
     margin-bottom: 20px;
+    
+}
+
+.glowBox .image{
+    background-color: white;
 }
 
 p {
@@ -233,9 +246,6 @@ img{
     line-height: 1.6;
 }
 
-.about{
-    
-}
 
 
 /*blog*/
@@ -243,19 +253,49 @@ img{
     margin-top: 40px;
 }
 
-.blogHeader{
+.blog .img{
+    color: aqua;
     text-align: center;
-    margin: 10px;
-    margin-bottom: 40px;
+    padding: auto;
+}
+
+.blogHeader{
+    
+    padding: 30px;
+  font-size: large;
+  text-align: center;
+  background: white;
+}
+/*font-family: 'Roboto', sans-serif;*/
+.blogText{
+    font-size: small;
+    
+    font-family: 'Open Sans', sans-serif;
+    
+    
+    margin-top: 40px;
+    background-color: var(--backgroundColor);
+    padding: 10px;
+    
     
 }
 
-.blogText{
-    margin-top: 40px;
+.blogText img{
+    color: aqua;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+    
+}
+
+.blogText p {
+    color: black;
 }
 
 .blog{
+    color: black;
     max-width: 1100px;
     margin: auto;
+    
     
 }
