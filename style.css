@@ -63,11 +63,17 @@ footer{
     position: fixed;
     height:60px;
     color: var(--backgroundColor);
-    display: flex;  
+    display: flex; 
     flex-wrap: wrap;
     justify-content: space-between;
-    color: var(--color2)
+    color: var(--color2);
+    align-items: center;
     
+}
+
+footer div{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 .center {
@@ -117,20 +123,10 @@ footer{
     background-color: white;
 }
 
-p {
-    font-size: 20px;
-    color: var(--backgroundColor);
-}
+
 p + p {
     margin-top: 20px;
 }
-
-h1 {
-    color: var(--backgroundColor);
-}
-
-
-
 
 a {
     font-size: 20px;
@@ -274,10 +270,12 @@ img{
 /*blog*/
 .links{
     margin-top: 40px;
+    background-color: lightgrey;
+    padding: 5px 15px
 }
 
 .blog .image{
-    background-color: lightgrey;
+    
     text-align: center;
     padding: auto;
     margin: auto;
@@ -305,17 +303,26 @@ img{
 }
 
 .card {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
     background-color: var(--backgroundColor);
     padding: 20px;
     margin-top: 20px;
     padding-bottom: 35px;
+    font-size: 20px;
+    
 }
 
-.card p{
+.card .image{
+    padding: 15px 0px;
+}
+
+
+.blog p {
     color: black;
 }
 
-.blog p {
+.card h1 {
     color: black;
 }
 
@@ -325,22 +332,21 @@ img{
     margin: auto;
 }
 
-.blog h1{
-    
-    color: black;
-    
-}
-
 /* Style all font awesome icons */
 .fa {
 
-    padding: 20px;
+    padding: 8px;
     font-size: 30px;
-    width: 20px;
-    height: 20px;
-    text-align: center;
+    
+
+    text-align: left;
     text-decoration: none;
     border-radius: 10%;
+    display: inline;
+    vertical-align: middle;
+
+    margin: 5px 2px;
+
   }
   
   /* Add a hover effect if you want */
