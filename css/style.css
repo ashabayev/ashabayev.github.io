@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+/*font*/
+/*font-family: 'Roboto', sans-serif;*/
+.Roboto{font-family:'Roboto';font-weight:400;}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+:root{
+    --color1: #FFE1BC;
+    --color2: #A06596;
+    --color3: #679BE5;
+    --backgroundColor: #f0ebee;
+    --color5: #403C59;
+    --lighterPurple: #645e8b;
+    --darkerPurple: #333047;
+}
+
+html{
+    
+    height: 100%;
+}
+
+body{
+    background-color: var(--color5);
+    position: relative;
+    margin: 0 0 100px;
+    padding-bottom:60px;
+}
+
+
+
+#container{
+    min-height: 100%;
+    position:relative;
+}
+
+
+
+#main{
+    overflow: auto;
+    position: relative;
+    display: block;
+    background-color: var(--color5);
+    min-height: 100%;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+footer{
+    background-color: var(--darkerPurple);
+    
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    height:60px;
+    color: var(--backgroundColor);
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color: var(--color2);
+    align-items: center;
+    
+}
+
+footer div{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#intro{
+    background-color: var(--color2);
+    padding-top: 1%;
+    padding-bottom: 20px;
+
+    margin-bottom: 5px;
+}
+
+#introText{
+    padding-left: 10%;
+    height: auto;
+    width: 80%
+
+}
+
+.glowBox {
+    position: relative;
+    width: 450px;
+    
+    height: auto;
+    float: left;
+    margin: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.glowBox h2{
+    color: var(--backgroundColor);
+    font-size: 20px;
+}
+
+.glowBox h3 {
+    color: var(--backgroundColor);
+    font-size: 15px;
+}
+
+.glowBox .image{
+    background-color: white;
+}
+
+
+p + p {
+    margin-top: 20px;
+}
+
+a {
+    font-size: 20px;
+    color: hotpink;
+    text-decoration: none;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    border: none;
+}
+
+.over-img{
+    position: absolute;
+    height: 130px;
+    top: 0;
+    left: 0;
+}
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--color2);
+    list-style: none;
+}
+
+/* Float the list items side by side */
+ul.topnav li {
+    float: left;
+    list-style: none;
+}
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    color: var(--color5);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 18px;
+    list-style: none;
+}
+
+/* Change background color of links on hover */
+ul.topnav li a:hover {background-color: #A0889C;}
+
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+
+#home-wrapper .tabs > div:hover {
+
+    background-color: var(--color3);
+    border-radius: 5px; 
+
+
+}
+
+
+
+.tabs > div{
+    cursor:pointer;
+}
+
+#home-wrapper .image {
+
+    width: 450px;
+    height: 350px;
+
+}
+
+.white-box {
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: var(--color1);
+
+
+}
+
+.glowBox:hover .overlay {
+    opacity: .5;
+}
+
+img{
+    margin:auto;
+    max-width: 1000px;
+}
+
+.thumbnail{
+    margin:auto;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+
+.text {
+    color: var(--backgroundColor);
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.userImage{
+    max-width:400px;
+    height:auto;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+
+}
+
+.thumbText{
+    text-align: center;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+
+
+/*card*/
+.links{
+    margin-top: 40px;
+    background-color: lightgrey;
+    padding: 5px 15px
+}
+
+
+.blogHeader{
+    color: black;
+    padding: 30px;
+  font-size: large;
+  text-align: center;
+  background: var(--backgroundColor);
+}
+
+
+.card + .card {
+    margin-top: 20px;
+}
+
+.card {
+    font-family: 'Open Sans', sans-serif;
+    color: black;
+    background-color: var(--backgroundColor);
+    padding: 20px;
+    margin-top: 20px;
+    padding-bottom: 35px;
+    font-size: 20px;
+    
+}
+
+.card .image{
+    padding: 15px 0px;
+}
+
+
+.card h1 {
+    color: black;
+}
+
+/* Style all font awesome icons */
+.fa {
+
+    padding: 8px;
+    font-size: 30px;
+    
+
+    text-align: left;
+    text-decoration: none;
+    border-radius: 10%;
+    display: inline;
+    vertical-align: middle;
+
+    margin: 5px 2px;
+
+  }
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* linkedin */
+  .fa-linkedin {
+    background: #007bb5;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
