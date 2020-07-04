@@ -8,6 +8,24 @@
         <title>Anna Shabayev</title>
 
     </head>
+    <nav>
+		<div class="topnav">
+            <ul>
+                <li><a href="index.html"><b>Projects</b></a></li>
+                <li><a href="film.html"><b>Film</b></a></li>
+                <li><a href="3DModels.html"><b>3D Models</b></a></li>
+                <li><a href="about.html"><b>About</b></a></li>
+                <li style="float: right;"><a href="./images/webresume.pdf" target="_blank"><b>Resume</b></a></li>
+                <li class="icon"> <!--This is used for small screens-->
+                    <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
+                </li>
+            </ul>
+            
+        </div>
+        
+        
+    </nav>
+    
 
 
     <body>
@@ -29,109 +47,110 @@
                 <h1 style="color: var(--backgroundColor)">Hello, this is Anna Shabayev! I develop and design in virtual and augmented reality using my skills in programming, video game design, and film production. </h1>
             </div>
         </div>
-        <div id="main">
+
+        <div id="introText">
             <p style="font-size: 20px;color: var(--backgroundColor);">Besides these projects below, I also have a <a href="https://devpost.com/ashabayev?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav">devpost</a> with all my hackathon projects and a <a href="https://github.com/ashabayev">github</a>.</p>
             <p style="font-size: 20px;color: var(--backgroundColor);">I have won twice at the MIT VR hackathons, have been commissioned to make a game for Bose AR, and have worked on a VR journalism piece.</p>
-            
-            <div id="home-wrapper">
+        </div>
 
-                <div id="thumbnail">
-                    <div onclick="window.location='MITRealityHack.html';" class="glowBox">
-                        <img src = "images/themindeye.PNG" alt = "The Mind's Eye" class="image"/>
-                        <img src = "images/winner-ribbon.png" alt = "ribbon" class="over-img"/>
-                        <div class="thumbText">
-                            <h2>The Mind's Eye</h2>
-                            <h3>Winner at MIT Reality Hack</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">Won Best in Eye Tracking</div>
-                        </div>
+        <div id="home-wrapper">
+
+            <div id="thumbnail">
+                <div onclick="window.location='MITRealityHack.html';" class="glowBox">
+                    <img src = "images/themindeye.PNG" alt = "The Mind's Eye" class="image"/>
+                    <img src = "images/winner-ribbon.png" alt = "ribbon" class="over-img"/>
+                    <div class="thumbText">
+                        <h2>The Mind's Eye</h2>
+                        <h3>Winner at MIT Reality Hack</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">Won Best in Eye Tracking</div>
                     </div>
                 </div>
-
-                <div class="thumbnail">
-                    <div onclick="window.location='Together.html';" class="glowBox">
-
-                        <img src = "images/realityHack.PNG" alt = "Winner" class="image"/>
-                        <img src = "images/winner-ribbon.png" alt = "ribbon" class="over-img"/>
-                        <div class="thumbText">
-                            <h2>Together</h2>
-                            <h3>Winner at MIT Reality Virtually</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">Won Best In Gaming</div>
-                        </div>
-                    </div>  
-                </div>
-
-                <div id="thumbnail">
-                    <div onclick="window.location='boseAR.html';" class="glowBox">
-                        <img src = "images/boseAR.PNG" alt = "BoseAR" class="image"/>
-                        <div class="thumbText">
-                            <h2>Bose AR Game Jam</h2>
-                            <h3>Commissioned Work for Bose</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">BoseAR</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="thumbnail">
-                    <div onclick="window.location='arrivalVR.html';" class="glowBox">
-                        <img src = "images/arrival.PNG" alt = "ArrivalVR" class="image"/>
-                        <div class="thumbText">
-                            <h2>Arrival VR</h2>
-                            <h3>Lead Developer</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div id="thumbnail">
-                    <div onclick="window.location='dddg.html';" class="glowBox">
-                        <img src = "images/starmap.png" alt = "stARmap" class="image"/>
-                        <div class="thumbText">
-                            <h2>AR Website Tool</h2>
-                            <h3>Research at UIUC at Data Driven Design Group</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">NCSA</div>
-                        </div>	
-                    </div>
-                </div>
-
-                <div id="thumbnail">
-                    <div onclick="window.location='fromtheheart.html';" class="glowBox">
-                        <img src = "images/fromtheheart.PNG" alt = "fromtheheart" class="image"/>
-                        <div class="thumbText">
-                            <h2>From the HeARt</h2>
-                            <h3>USC Creating Reality</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">from the heARt</div>
-                        </div>	
-                    </div>
-                </div>
-                
-                <div id="thumbnail">
-                    <div onclick="window.location='uncommon.html';" class="glowBox">
-                        <img src = "images/macball.PNG" alt = "uncommon" class="image"/>
-                        <img src = "images/winner-ribbon.png" alt = "ribbon" class="over-img"/>
-                        <div class="thumbText">
-                            <h2>Macinball PlusVR</h2>
-                            <h3>Winner at Uncommon Hacks</h3>
-                        </div>
-                        <div class="overlay">
-                            <div class="text">Winner</div>
-                        </div>	
-                    </div>
-                </div>
-                
-
             </div>
+
+            <div class="thumbnail">
+                <div onclick="window.location='Together.html';" class="glowBox">
+
+                    <img src = "images/realityHack.PNG" alt = "Winner" class="image"/>
+                    <img src = "images/winner-ribbon.png" alt = "ribbon" class="over-img"/>
+                    <div class="thumbText">
+                        <h2>Together</h2>
+                        <h3>Winner at MIT Reality Virtually</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">Won Best In Gaming</div>
+                    </div>
+                </div>  
+            </div>
+
+            <div id="thumbnail">
+                <div onclick="window.location='boseAR.html';" class="glowBox">
+                    <img src = "images/boseAR.PNG" alt = "BoseAR" class="image"/>
+                    <div class="thumbText">
+                        <h2>Bose AR Game Jam</h2>
+                        <h3>Commissioned Work for Bose</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">BoseAR</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thumbnail">
+                <div onclick="window.location='arrivalVR.html';" class="glowBox">
+                    <img src = "images/arrival.PNG" alt = "ArrivalVR" class="image"/>
+                    <div class="thumbText">
+                        <h2>Arrival VR</h2>
+                        <h3>Lead Developer</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="thumbnail">
+                <div onclick="window.location='dddg.html';" class="glowBox">
+                    <img src = "images/starmap.png" alt = "stARmap" class="image"/>
+                    <div class="thumbText">
+                        <h2>AR Website Tool</h2>
+                        <h3>Research at UIUC at Data Driven Design Group</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">NCSA</div>
+                    </div>	
+                </div>
+            </div>
+
+            <div id="thumbnail">
+                <div onclick="window.location='fromtheheart.html';" class="glowBox">
+                    <img src = "images/fromtheheart.PNG" alt = "fromtheheart" class="image"/>
+                    <div class="thumbText">
+                        <h2>From the HeARt</h2>
+                        <h3>USC Creating Reality</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">from the heARt</div>
+                    </div>	
+                </div>
+            </div>
+            
+            <div id="thumbnail">
+                <div onclick="window.location='uncommon.html';" class="glowBox">
+                    <img src = "images/macball.PNG" alt = "uncommon" class="image"/>
+                    <img src = "images/winner-ribbon.png" alt = "ribbon" class="over-img"/>
+                    <div class="thumbText">
+                        <h2>Macinball PlusVR</h2>
+                        <h3>Winner at Uncommon Hacks</h3>
+                    </div>
+                    <div class="overlay">
+                        <div class="text">Winner</div>
+                    </div>	
+                </div>
+            </div>
+            
+
         </div>
         
         <!--data viz ncsa?-->
