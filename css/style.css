@@ -309,11 +309,20 @@ img{
     color: black;
     background-color: var(--backgroundColor);
     padding: 20px;
+    margin: 0 auto;
     margin-top: 20px;
     padding-bottom: 35px;
     font-size: 18px;
+    max-width: 800px;
+    
     
 }
+
+.card p {
+    padding: 0 30px
+}
+
+
 
 .card .image{
     padding: 15px 0px;
