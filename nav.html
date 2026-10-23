@@ -1,37 +1,21 @@
-<!DOCTYPE html>
-
 <nav>
     <div class="topnav">
-        <ul>
-            <li><a href="index.html"><b>Projects</b></a></li>
-            <li><a href="film.html"><b>Film</b></a></li>
-            <li><a href="3DModels.html"><b>3D Models</b></a></li>
-            <li><a href="about.html"><b>About</b></a></li>
-            <li style="float: right;"><a href="./images/webresume.pdf" target="_blank"><b>Resume</b></a></li>
-            <li class="icon"> <!--This is used for small screens-->
-                <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-            </li>
+        <ul id="myTopnav">
+            <li class="brand"><a href="index.html">Anna Shabayev</a></li>
+            <li><a href="index.html" data-page="index.html">Projects</a></li>
+            <li><a href="film.html" data-page="film.html">Film</a></li>
+            <li><a href="3DModels.html" data-page="3DModels.html">3D Models</a></li>
+            <li><a href="about.html" data-page="about.html">About</a></li>
+            <li class="resume"><a href="./images/webresume.pdf" target="_blank">Resume</a></li>
+            <li class="icon"><a href="javascript:void(0);" onclick="document.getElementById('myTopnav').classList.toggle('open')" aria-label="Menu">&#9776;</a></li>
         </ul>
-        
     </div>
-    
-    
 </nav>
-
-<!--
-<nav>
-		
-	<ul class="topnav" id="myTopnav">
-        <li><a href="index.html"><b>Projects</b></a></li>
-        <li><a href="film.html"><b>Film</b></a></li>
-        <li><a href="3DModels.html"><b>3D Models</b></a></li>
-        <li><a href="about.html"><b>About</b></a></li>
-        <li class="icon"> 
-            <a href="javascript:void(0);" onclick="myFunction()">&#9776;</a>
-        </li>
-    </ul>
-</nav>
--->
-
-    
-
+<script>
+    (function () {
+        var page = location.pathname.split('/').pop() || 'index.html';
+        document.querySelectorAll('.topnav a[data-page]').forEach(function (a) {
+            if (a.getAttribute('data-page') === page) a.classList.add('active');
+        });
+    })();
+</script>
