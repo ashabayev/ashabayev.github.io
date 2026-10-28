@@ -383,3 +383,12 @@ footer h2 { font-size: .9rem; font-weight: 400; margin: 0; font-family: 'Inter',
     border-radius: 12px;
     background: #fff;
 }
+
+.model-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+}
+.model-gallery img { width: 100%; border-radius: 12px; background: #000; }
+@media (max-width: 600px) { .model-gallery { grid-template-columns: 1fr; } }
